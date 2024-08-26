@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Feature Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Replace with your logo file -->
+        </div>
+        <div class="user-info">
+            <span id="userName">User Name</span> <!-- Replace with dynamic user name -->
+        </div>
+    </header>
+    
+    <div class="dashboard">
+        <header class="dashboard-header">
+            <h1>Unified Feature Dashboard</h1>
+        </header>
+
+        <section class="overview">
+            <div class="card" id="tasksCard">
+                <h2>Total Tasks</h2>
+                <p id="totalTasks">0</p>
+            </div>
+            <div class="card" id="notesCard">
+                <h2>Total Notes</h2>
+                <p id="noteCount">0</p>
+            </div>
+            <div class="card" id="boardsCard">
+                <h2>Total Boards</h2>
+                <p id="boardCount">0</p>
+            </div>
+            <div class="card" id="deadlinesCard">
+                <h2>Upcoming Deadlines</h2>
+                <p id="upcomingDeadline">None</p>
+            </div>
+        </section>
+
+        <section class="links">
+            <h2>Access Features</h2>
+            <a href="../feature1/feature1.html" class="feature-link">Advanced Task Management</a>
+            <a href="../feature2/feature2.html" class="feature-link">Trello Clone</a>
+            <a href="../feature3/feature3.html" class="feature-link">Voice-to-Text Notes</a>
+        </section>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

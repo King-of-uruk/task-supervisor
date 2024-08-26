@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 10px 0;
+  background-color: #0079bf;
+  color: white;
+  border: none; 
+  border-radius: 3px;
+}
+
+#boards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.board {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.lists {
+  margin-top: 10px;
+}
+
+.list {
+  background-color: #e2e4e6;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card[draggable="true"] {
+  cursor: grab;
+}
+
+.voice-note {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.transcript-container {
+  margin-top: 10px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 50px;
+  font-size: 14px;
+}
+
+.start-record-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.start-record-btn:hover {
+  background-color: #0056b3;
+}
+
+.stop-record-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.stop-record-btn:hover {
+  background-color: #c82333;
+}

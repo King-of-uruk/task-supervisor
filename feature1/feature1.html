@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Task Management</title>
+    <link rel="stylesheet" href="feature1.css">
+</head>
+<body>
+    <h1>Advanced Task Management</h1>
+    <div class="progress-container">
+        <div class="progress-bar">
+            <span id="progressText">0%</span>
+        </div>
+    </div>
+    <form id="taskForm">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <textarea id="description" placeholder="Task Description"></textarea>
+        <input type="date" id="deadline" required>
+        <div id="subtaskContainer">
+            <input type="text" class="subtaskInput" placeholder="Subtask 1">
+        </div>
+        <button type="button" id="addSubtask">Add Subtask</button>
+        <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+
+    <script src="feature1.js"></script>
+</body>
+</html>

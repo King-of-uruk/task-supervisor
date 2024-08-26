@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello Clone with Voice-to-Text</title>
+    <link rel="stylesheet" href="feature2.css">
+</head>
+<body>
+    <div class="dashboard">
+        <button id="createBoard">Create New Board</button>
+        <div id="boards"></div>
+    </div>
+
+    <template id="boardTemplate">
+        <div class="board">
+            <h2 contenteditable="true">Board Title</h2>
+            <button class="createList">Add List</button>
+            <div class="lists"></div>
+        </div>
+    </template>
+
+    <template id="listTemplate">
+        <div class="list">
+            <h3 contenteditable="true">List Title</h3>
+            <button class="createCard">Add Card</button>
+            <div class="cards"></div>
+        </div>
+    </template>
+
+    <template id="cardTemplate">
+        <div class="card" draggable="true">
+            <p contenteditable="true">Card Title</p>
+            <span class="dueDate">Due Date: <input type="date"></span>
+            <div class="voice-note">
+                <button class="start-record-btn" onclick="startRecording(this)">Start Recording</button>
+                <button class="stop-record-btn" onclick="stopRecording(this)" disabled>Stop Recording</button>
+                <div class="transcript-container">
+                    <p class="transcript"></p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="feature2.js"></script>
+</body>
+</html>

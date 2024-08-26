@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#i1 {
+    border-radius: 100%;
+    margin-right: 10px; /* Add some space between the logo and the text */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Change text color on hover */
+}
+nav .logo {
+    width: 50px; /* Set a fixed width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 100%;
+    margin-right: 10px; /* Space between the logo and the text */
+}
+
+#hero {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    margin: 0 0 20px;
+}
+
+#hero p {
+    margin: 0 0 30px;
+    font-size: 18px;
+}
+
+.cta-button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #0056b3;
+}
+
+#features {
+    padding: 40px 0;
+    background: #fff;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Feature Items Layout */
+.feature-item {
+    width: 100%;
+    max-width: 100%; /* Full width of the container */
+    margin: 20px 0; /* Spacing between rows */
+    padding: 20px; /* Padding inside each feature item */
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.feature-item-1 .feature-content {
+    flex-direction: row;
+}
+
+.feature-item-2 .feature-content {
+    flex-direction: row-reverse;
+}
+
+.feature-image {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature-text {
+    max-width: 60%;
+    margin: 0 20px;
+}
+
+.feature-text h3 {
+    margin: 0 0 10px;
+}
+
+.feature-text p {
+    margin: 0;
+}
+
+/* Feature Hover Effect */
+.feature-item:hover {
+    transform: scale(1.05); /* Slightly enlarge the feature item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Grid Layout for Features */
+@media (min-width: 768px) {
+    .feature-item {
+        width: 48%; /* Two items per row with margin */
+        display: inline-block; /* Allow items to sit side by side */
+    }
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
